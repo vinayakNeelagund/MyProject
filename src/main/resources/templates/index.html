@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js
+"></script>
+<script
+	src="/js/validation.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css" />
+
+
+</head>
+<body >
+<br><br><br><br><br>
+
+	<div class="container ">
+		<h2>Expense Details</h2>
+		
+		<div class="container ">
+<div class="row ">
+<div class=" col-md-12 text-center" id="msg"></div>
+</div>
+</div>
+		<form id="expensedetails" action="">
+		<div class="row jumbotron">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label for="email">Enter Your Name:</label> <input type="email"
+					class="form-control" id="clientname" placeholder="john@doe.com"
+					name="clientname">
+			</div>
+			<div class="form-group">
+				<label for="title">Title:</label> <input type="Text"
+					class="form-control" id="title" placeholder="Enter Title"
+					name="title">
+			</div>
+			<div class="form-group">
+				<label for="Amt">Amount:</label> <input type="text"
+					class="form-control" id="amount" placeholder="Enter Amount"
+					name="amount">
+			</div>
+			<div class="form-group">
+				<label for="comment">Description:</label>
+				<textarea class="form-control" rows="5" id="descpp" name="descpp"></textarea>
+			</div>
+			<div class="form-group">
+			<label for="Amt">Select Currency:</label>
+				<select  class="form-control" name="currency" id="currency">
+					<option value="INR">INR</option>
+					<option value="EUR">EUR</option>
+					<option value="USD">USD</option>
+					
+				</select>
+			</div>
+
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+			</div>
+		</form>
+	</div>
+<br><br><br><br><br>
+<div class="container ">
+<div class="row ">
+<div class=" col-md-12 " id="ListofExpense"><table id='example'></table></div>
+</div>
+</div>
+
+
+</body>
+
+<script
+	src="/js/ajaxExpense.js"></script>
+	
+</html>
