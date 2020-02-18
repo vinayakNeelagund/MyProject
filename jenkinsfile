@@ -28,6 +28,11 @@ pipeline {
                     sh 'mvn install'
                      echo 'Install Code'
             }
+        stage ('Install Stage') {
+             steps {
+                    docker build -t .
+                    echo 'Docker Run Code'
+             }
         }
     }
 }
