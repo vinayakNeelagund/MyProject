@@ -29,12 +29,7 @@ pipeline {
                      echo 'Install Code'
             }
         }
-       stage ('Docker Stage') {
-             steps {
-                  sh "docker build -t test -f dockerfile ."
-                    echo 'Docker Code'
-             }
-        } 
+      
         
     }
 }
