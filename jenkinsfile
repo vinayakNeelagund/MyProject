@@ -30,13 +30,13 @@ pipeline {
             }
         }
          stage ('Docker Stage') {
-            agent { 
-                dockerfile {
-                    filename 'dockerfile'
-                }
-            }
+           // agent { 
+             //   dockerfile {
+             //       filename 'dockerfile'
+               // }
+            //}
              steps {
-                 // sh "docker build -t test -f dockerfile ."
+                  sh "docker build -t test -f dockerfile ."
                  echo 'Docker Code'
              }
         } 
