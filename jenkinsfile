@@ -31,7 +31,7 @@ pipeline {
         }
          stage ('Docker Stage') {
              steps {
-                  sh "docker build -t test -f dockerfile ."
+                  sh "sudo docker build -t test -f dockerfile ."
                     echo 'Docker Code'
              }
         } 
