@@ -1,8 +1,5 @@
 pipeline {
-    agent { dockerfile {
-      filename 'dockerfile'
-    }
-    }
+    agent any
     tools {
             maven 'Maven_3.5.2'
         }
@@ -35,6 +32,7 @@ pipeline {
          stage ('Docker Stage') {
              steps {
                  sh pwd
+                 sh "sudo docker build -t test -f dockerfile ."
                  echo 'Docker Code'
              }
         } 
